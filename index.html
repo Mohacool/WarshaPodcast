@@ -16,25 +16,43 @@
         *{
             margin:0;
             padding:0;
+            font-family: 'Gotham';
+            
         }
         html,body{
             height: 100%
         }
-        /* .row{
-            border:1px solid green;
+        @font-face {
+            font-family: 'Gotham';
+            src: url('/GothamBold.otf'); /* IE9 Compat Modes */
             
+            font-weight: 700;
+            font-style: normal;
         }
-        .col{
-            border: 1px solid red;
-        } */
+        .blue{
+            border:1px solid blue;
+        }
+        .green{
+            border:1px solid green;
+        }
+        .our_shows{
+            color:#00e1ff;
+            font-size: 34px;
+            text-decoration-line: underline;
+            text-decoration-thickness: 6px;
+            text-decoration-color: #ff0094;
+
+        }
         #logo{
-            height:40px;
+            width:400px;
+            max-width:100%;
         }
         .ourshows{
             transform: rotate(
             5deg);
                 display: flex;
                 justify-content: center;
+            width:80%;
         }
         .social_buttons:hover{
             cursor:pointer;
@@ -44,7 +62,7 @@
             background-color:#ff0094;
             width:100%;
             height:50px;
-            position: fixed;
+            /* position:fixed; */
             left: 0;
             bottom: 0;
             width: 100%;
@@ -56,87 +74,78 @@
             color:#00fdff;
             font-size:20px;
         }
+        
 
         /* Non mobile */
         @media (min-width: 768px){
-            .ourshows{
+            /* .ourshows{
                 all:unset;
                 transform:translateX(-30%);
-            }
-            .container{
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .header{
-                position:absolute;
-                left:50%;
-                transform:translateX(-50%);
+            } */
+            .footer{
+                position:fixed;
             }
             #logo{
-                all:unset;
+                
             }
 
         }
     </style>
     <div class="header d-flex justify-content-center">
         <a class="pt-4" href="#">
-            <img id="logo" src="/WarshaPodcast/logo-2.png" alt="">
+            <img id="logo" src="/logo.png" alt="">
         </a>
     </div>
     
     <div class="container pt-5 pt-md-0">
-        <!-- <div class="row mt-5 ourshows mx-0">
-            <img src="/WarshaPodcast/Rectangle_2.png" alt="">
-        </div> -->
         <div class="row mx-0">
-            <div class="col-12 col-md-4 ourshows">
-                <img src="/WarshaPodcast/Rectangle_2.png" alt="">
+            <div class="col col-md-4 d-flex justify-content-center">
+                <h1 class="our_shows">Our Shows</h1>
+                <!-- <img class="ourshows" src="/Rectangle_2.png" alt=""> -->
             </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
+            <div class="col-0 col-md-4 "></div>
+            <div class="col-0 col-md-4 "></div>
         </div>
         <div class="row mx-0">
             
-            <div class="col d-flex flex-column justify-content-center p-4">
-                <img src="/WarshaPodcast/showpic.png" alt="">
+            <div class="col-12 col-md-4 d-flex flex-column justify-content-center p-4">
+                <img src="/showpic.png" alt="">
                 <div class="podcast_title text-center pt-1">URDU BEL ARABY</div>
 
                 <div class="row pt-2 d-flex justify-content-center">
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <img class="social_buttons mx-1" src="/WarshaPodcast/youtube.png" alt="">
+                        <img class="social_buttons mx-1" src="/youtube.png" alt="">
                     </a>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <img class="social_buttons mx-1" src="/WarshaPodcast/insta.png" alt="">
+                        <img class="social_buttons mx-1" src="/insta.png" alt="">
                     </a>
                     
                 </div>
             </div>
-            <div class="col d-flex flex-column justify-content-center p-4">
-                <img src="/WarshaPodcast/showpic.png" alt="">
+            <div class="col-12 col-md-4 d-flex flex-column justify-content-center p-4">
+                <img src="/showpic.png" alt="">
                 <div class="podcast_title text-center pt-1">LOKLOK w/ Labib</div>
 
                 <div class="row pt-2 d-flex justify-content-center">
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <img class="social_buttons mx-1" src="/WarshaPodcast/youtube.png" alt="">
+                        <img class="social_buttons mx-1" src="/youtube.png" alt="">
                     </a>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <img class="social_buttons mx-1" src="/WarshaPodcast/insta.png" alt="">
+                        <img class="social_buttons mx-1" src="/insta.png" alt="">
                     </a>
                     
                 </div>
             </div>
-            <div class="col d-flex flex-column justify-content-center p-4 mb-5 mb-md-0">
-                <img src="/WarshaPodcast/showpic.png" alt="">
+            <div class="col-12 col-md-4 d-flex flex-column justify-content-center p-4 mb-5 mb-md-0">
+                <img src="/showpic.png" alt="">
                 <div class="podcast_title text-center pt-1">HIGH & WIDE</div>
 
                 <div class="row pt-2 d-flex justify-content-center">
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <img class="social_buttons mx-1" src="/WarshaPodcast/youtube.png" alt="">
+                        <img class="social_buttons mx-1" src="/youtube.png" alt="">
                     </a>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <img class="social_buttons mx-1" src="/WarshaPodcast/insta.png" alt="">
+                        <img class="social_buttons mx-1" src="/insta.png" alt="">
                     </a>
                     
                 </div>
@@ -148,6 +157,7 @@
             
         </div>
     </div>
+    
     <footer class="footer d-flex justify-content-center align-items-center">
       
         <span>©2021 WARSHA STUDIOS</span>
@@ -155,4 +165,23 @@
     </footer>
     
 </body>
+<script>
+    var on = false;
+    $('#logo').click(function(){
+        
+        if (!on){
+            $(".row").addClass("blue");
+            $(".col").addClass("green");
+            on = true;
+        }
+        else{
+            $(".row").removeClass("blue");
+            $(".col").removeClass("green");
+            on = false;
+        }
+        
+
+    })
+        
+</script>
 </html>
