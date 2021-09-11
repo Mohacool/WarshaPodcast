@@ -27,6 +27,9 @@
         .col{
             border: 1px solid red;
         } */
+        #logo{
+            height:40px;
+        }
         .ourshows{
             transform: rotate(
             5deg);
@@ -54,20 +57,45 @@
             font-size:20px;
         }
 
+        /* Non mobile */
         @media (min-width: 768px){
             .ourshows{
                 all:unset;
+                transform:translateX(-30%);
             }
+            .container{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .header{
+                position:absolute;
+                left:50%;
+                transform:translateX(-50%);
+            }
+            #logo{
+                all:unset;
+            }
+
         }
     </style>
     <div class="header d-flex justify-content-center">
         <a class="pt-4" href="#">
-            <img src="/WarshaPodcast/logo-2.png" alt="">
+            <img id="logo" src="/WarshaPodcast/logo-2.png" alt="">
         </a>
     </div>
-    <div class="container">
-        <div class="row mt-5 ourshows mx-0">
-            <img src="/WarshaPodcast/Rectangle 2.png" alt="">
+    
+    <div class="container pt-5 pt-md-0">
+        <!-- <div class="row mt-5 ourshows mx-0">
+            <img src="/WarshaPodcast/Rectangle_2.png" alt="">
+        </div> -->
+        <div class="row mx-0">
+            <div class="col-12 col-md-4 ourshows">
+                <img src="/WarshaPodcast/Rectangle_2.png" alt="">
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
         </div>
         <div class="row mx-0">
             
