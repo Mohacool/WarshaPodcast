@@ -73,6 +73,7 @@
         .podcast_title{
             color:#00fdff;
             font-size:20px;
+            white-space:nowrap;
         }
         
 
@@ -166,6 +167,8 @@
     
 </body>
 <script>
+
+    // Debugging 
     var on = false;
     $('#logo').click(function(){
         
@@ -182,6 +185,19 @@
         
 
     })
+
+    function fixOverflow(element){
+        $(element).each(function(){
+            console.log($(this).text());
+            console.log($(this)[0].scrollWidth);
+            console.log($(this).innerWidth());
+            // if ($(this)[0].scrollWidth >  $(this).innerWidth()) {
+            //     console.log('yes');
+            // }
+        })
+        
+    }
+    
         
 </script>
 </html>
